@@ -12,11 +12,31 @@
   <link href="prism.css" rel="stylesheet" />
 </head>
 <body>
-<h1>Design systems smarthtml.io generator </h1>
+<h1>Design system for Bootstrap 4 elements </h1>
 
 
 
-<h2> <a href="bs4.html"> Bootstrap 4 </a> </h2>
+
+<section>
+
+  <h2>Button with badged</h2>
+
+  <p>Button with editable label and badge text </p>
+
+  <button data-component="bs4-btn-badge" render:field="button" type="button" class="btn btn-primary">
+    <std:block render:field="label" render:value> Notifications </std:block> <span render:field="badge" render:value class="badge badge-light">4</span>
+  </button>
+
+
+  <h3>Code</h3>
+  <input class="form-control"  type="text" value="//[@data-component=='bs4-btn-badge']">
+  <pre><code class="language-html">&lt;button render:field=&quot;button&quot; type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;
+    &lt;std:block render:field=&quot;label&quot; render:value&gt; Notifications &lt;/std:block&gt;
+    &lt;span render:field=&quot;badge&quot; render:value class=&quot;badge badge-light&quot;&gt;4&lt;/span&gt;
+&lt;/button&gt;</code></pre>
+
+</section>
+
 
 
 

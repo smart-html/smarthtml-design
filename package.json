@@ -2,7 +2,9 @@
   "name": "smarthtml-design",
   "version": "1.0.0",
   "dependencies": {
-    "gulp": "^3.6.0",
-    "gulp-webserver": "^0.9.1"
+    "gulp": "^3.6.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3"
   }
 }

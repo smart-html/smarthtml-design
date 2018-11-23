@@ -1,10 +1,16 @@
 var gulp = require('gulp');
-var webserver = require('gulp-webserver');
+const browserSync = require('browser-sync').create();
+const reload = browserSync.reload;
+
 
 gulp.task('default', function() {
-    gulp.src('docs')
-        .pipe(webserver({
-            livereload: true,
-            open: true
-        }));
+    browserSync.init({
+        notify: false,
+        port: 9000,
+        server: {
+            baseDir: ['docs']
+        }
+    });
+
+    gulp.watch("docs/**").on('change', browserSync.reload);
 });
