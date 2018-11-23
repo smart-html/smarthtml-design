@@ -22,4 +22,8 @@ npm install
 
 Run live preview
 
+```
+gulp
+```
+
 
